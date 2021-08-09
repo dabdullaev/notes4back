@@ -32,4 +32,10 @@ public class NotesController {
         return new ResponseEntity<Note>(nRepo.findById(id).get(), HttpStatus.OK);
     }
 
+    @DeleteMapping("/notes/{id}")
+    public ResponseEntity<HttpStatus> deleteNote(@PathVariable Long id){
+        nRepo.deleteById(id);
+        return new ResponseEntity<HttpStatus>(HttpStatus.NO_CONTENT);
+    }
+
 }
