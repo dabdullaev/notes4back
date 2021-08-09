@@ -1,8 +1,0 @@
-com/javatodev/api/model/Note.java
- com.javatodev.api.model.Note
-com/javatodev/api/controller/NotesController.java
- com.javatodev.api.controller.NotesController
-com/javatodev/api/Note4Application.java
- com.javatodev.api.Note4Application
-com/javatodev/api/repository/NotesRepository.java
- com.javatodev.api.repository.NotesRepository
