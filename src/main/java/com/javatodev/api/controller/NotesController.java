@@ -38,4 +38,9 @@ public class NotesController {
         return new ResponseEntity<HttpStatus>(HttpStatus.NO_CONTENT);
     }
 
+    @PutMapping("/notes")
+    public ResponseEntity<Note> updateNote(@RequestBody Note note){
+        return new ResponseEntity<Note>(nRepo.save(note), HttpStatus.OK);
+    }
+
 }
